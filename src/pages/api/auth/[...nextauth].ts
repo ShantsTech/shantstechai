@@ -83,44 +83,44 @@ export const createAuthOptions = (req: NextApiRequest): NextAuthOptions => ({
   },
   // Configure one or more authentication providers
   providers: [
-    DiscordProvider({
-      clientId: env.DISCORD_CLIENT_ID,
-      clientSecret: env.DISCORD_CLIENT_SECRET,
-      authorization: {
-        params: { scope: 'identify email role_connections.write' },
-      },
-    }),
+    // DiscordProvider({
+    //   clientId: env.DISCORD_CLIENT_ID,
+    //   clientSecret: env.DISCORD_CLIENT_SECRET,
+    //   authorization: {
+    //     params: { scope: 'identify email role_connections.write' },
+    //   },
+    // }),
     GithubProvider({
       clientId: env.GITHUB_CLIENT_ID,
       clientSecret: env.GITHUB_CLIENT_SECRET,
       allowDangerousEmailAccountLinking: true,
     }),
-    GoogleProvider({
-      clientId: env.GOOGLE_CLIENT_ID,
-      clientSecret: env.GOOGLE_CLIENT_SECRET,
-      allowDangerousEmailAccountLinking: true,
-    }),
-    RedditProvider({
-      clientId: env.REDDIT_CLIENT_ID,
-      clientSecret: env.REDDIT_CLIENT_SECRET,
-      authorization: {
-        params: {
-          duration: 'permanent',
-        },
-      },
-    }),
-    EmailProvider({
-      server: {
-        host: env.EMAIL_HOST,
-        port: env.EMAIL_PORT,
-        auth: {
-          user: env.EMAIL_USER,
-          pass: env.EMAIL_PASS,
-        },
-      },
-      sendVerificationRequest,
-      from: env.EMAIL_FROM,
-    }),
+    // GoogleProvider({
+    //   clientId: env.GOOGLE_CLIENT_ID,
+    //   clientSecret: env.GOOGLE_CLIENT_SECRET,
+    //   allowDangerousEmailAccountLinking: true,
+    // }),
+    // RedditProvider({
+    //   clientId: env.REDDIT_CLIENT_ID,
+    //   clientSecret: env.REDDIT_CLIENT_SECRET,
+    //   authorization: {
+    //     params: {
+    //       duration: 'permanent',
+    //     },
+    //   },
+    // }),
+    // EmailProvider({
+    //   server: {
+    //     host: env.EMAIL_HOST,
+    //     port: env.EMAIL_PORT,
+    //     auth: {
+    //       user: env.EMAIL_USER,
+    //       pass: env.EMAIL_PASS,
+    //     },
+    //   },
+    //   sendVerificationRequest,
+    //   from: env.EMAIL_FROM,
+    // }),
   ],
   cookies: {
     sessionToken: {
