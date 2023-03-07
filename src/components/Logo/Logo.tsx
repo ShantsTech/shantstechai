@@ -5,62 +5,220 @@ export function Logo({ ...props }: LogoProps) {
 
   return (
     <Box className={classes.root} {...props}>
-      <svg className={classes.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107 22.7">
-        <g className={classes.text}>
-          <path
-            className={classes.c}
-            d="M20.8,1.7H3.7L1.5,4.1v15l2.3,2.3h17.1v-5.2H6.7V7h14.1V1.7z"
-          />
-          <path
-            className={classes.ivit}
-            d="M76.1,1.7H56.6V7h7.2v14.3H69V7h7C76,7,76.1,1.7,76.1,1.7z M23.2,1.8v19.5h5.2V1.8C28.4,1.8,23.2,1.8,23.2,1.8z M30.8,1.8
-      v19.5h7.6l8.3-8.3V1.8h-5.2v8.3l-5.4,6V1.8C36.1,1.8,30.8,1.8,30.8,1.8z M49.1,1.8v19.5h5.2V1.8C54.3,1.8,49.1,1.8,49.1,1.8z"
-          />
-          <path
-            className={classes.ai}
-            d="M100.3,1.8v19.5h5.2V1.8H100.3z M95.6,1.8H80.8l-2.3,2.3v17.2h5.2v-7.1h8.9v7.1h5.2V4.1C97.8,4.1,95.6,1.8,95.6,1.8z
-      M92.7,8.9h-8.9V7h8.9V8.9z"
-          />
-          <path className={classes.accent} d="M46.7,16.2v5.1h-5.1" />
-        </g>
-        <g className={classes.badge}>
+      <svg
+        version="1.2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 700 700"
+        width="60"
+        height="30"
+      >
+        <title>shantsai</title>
+        <defs>
           <linearGradient
-            id="innerGradient"
+            id="g1"
+            x1="301.6"
+            y1="245.2"
+            x2="412.2"
+            y2="399.6"
             gradientUnits="userSpaceOnUse"
-            x1="10.156"
-            y1="22.45"
-            x2="10.156"
-            y2="2.4614"
-            gradientTransform="matrix(1 0 0 -1 0 24)"
           >
-            <stop offset="0" style={{ stopColor: '#081692' }} />
-            <stop offset="1" style={{ stopColor: '#1E043C' }} />
+            <stop offset="0" stop-color="#fecb52" />
+            <stop offset="1" stop-color="#ee4669" />
           </linearGradient>
           <linearGradient
-            id="outerGradient"
+            id="g2"
+            x1="271.3"
+            y1="198.8"
+            x2="399.1"
+            y2="389.7"
             gradientUnits="userSpaceOnUse"
-            x1="10.156"
-            y1="22.45"
-            x2="10.156"
-            y2="2.45"
-            gradientTransform="matrix(1 0 0 -1 0 24)"
           >
-            <stop offset="0" style={{ stopColor: '#1284F7' }} />
-            <stop offset="1" style={{ stopColor: '#0A20C9' }} />
+            <stop offset=".5" stop-color="#fecb52" stop-opacity="0" />
+            <stop offset=".9" stop-color="#9a3764" />
           </linearGradient>
-          <path
-            style={{ fill: 'url(#innerGradient)' }}
-            d="M1.5,6.6v10l8.7,5l8.7-5v-10l-8.7-5L1.5,6.6z"
-          />
-          <path
-            style={{ fill: 'url(#outerGradient)' }}
-            d="M10.2,4.7l5.9,3.4V15l-5.9,3.4L4.2,15V8.1
-		L10.2,4.7 M10.2,1.6l-8.7,5v10l8.7,5l8.7-5v-10C18.8,6.6,10.2,1.6,10.2,1.6z"
-          />
-          <path
-            style={{ fill: '#fff' }}
-            d="M11.8,12.4l-1.7,1l-1.7-1v-1.9l1.7-1l1.7,1h2.1V9.3l-3.8-2.2L6.4,9.3v4.3l3.8,2.2l3.8-2.2v-1.2H11.8z"
-          />
+          <linearGradient
+            id="g3"
+            x1="388.8"
+            y1="478.7"
+            x2="346.8"
+            y2="297.9"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#fecb52" />
+            <stop offset="1" stop-color="#ee4669" />
+          </linearGradient>
+          <linearGradient
+            id="g4"
+            x1="446"
+            y1="545.3"
+            x2="301.7"
+            y2="313.3"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset=".5" stop-color="#fecb52" stop-opacity="0" />
+            <stop offset=".9" stop-color="#9a3764" />
+          </linearGradient>
+          <linearGradient
+            id="g5"
+            x1="703.9"
+            y1="311.6"
+            x2="340.2"
+            y2="346.8"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset=".3" stop-color="#fecb52" />
+            <stop offset="1" stop-color="#ee4669" />
+          </linearGradient>
+          <linearGradient
+            id="g6"
+            x1="345.6"
+            y1="232.3"
+            x2="305.6"
+            y2="164.3"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset=".5" stop-color="#fecb52" stop-opacity="0" />
+            <stop offset="1" stop-color="#9a3764" />
+          </linearGradient>
+          <linearGradient
+            id="g7"
+            x1="237.5"
+            y1="424.6"
+            x2="245.1"
+            y2="424.6"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#fecb52" />
+            <stop offset="1" stop-color="#ee4669" />
+          </linearGradient>
+          <linearGradient
+            id="g8"
+            x1="135.7"
+            y1="394"
+            x2="302.4"
+            y2="339"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#fecb52" />
+            <stop offset="1" stop-color="#ee4669" />
+          </linearGradient>
+          <linearGradient
+            id="g9"
+            x1="279.6"
+            y1="441.6"
+            x2="256"
+            y2="490.1"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset=".3" stop-color="#fecb52" stop-opacity="0" />
+            <stop offset=".9" stop-color="#d22027" />
+          </linearGradient>
+          <linearGradient
+            id="g10"
+            x1="172.3"
+            y1="383.5"
+            x2="345.1"
+            y2="319.8"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset=".5" stop-color="#fecb52" stop-opacity="0" />
+            <stop offset=".9" stop-color="#d22027" />
+          </linearGradient>
+          <linearGradient
+            id="g11"
+            x1="507.6"
+            y1="362.8"
+            x2="368.1"
+            y2="630.2"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#fecb52" />
+            <stop offset="1" stop-color="#ee4669" />
+          </linearGradient>
+        </defs>
+        {/* <style>
+		.s0 {{ fill: url(#g1) } }
+		.s1 { opacity: .5;mix-blend-mode: multiply;fill: url(#g2) } 
+		.s2 { fill: url(#g3) } 
+		.s3 { opacity: .5;mix-blend-mode: multiply;fill: url(#g4) } 
+		.s4 { fill: url(#g5) } 
+		.s5 { opacity: .5;mix-blend-mode: multiply;fill: url(#g6) } 
+		.s6 { fill: url(#g7) } 
+		.s7 { fill: url(#g8) } 
+		.s8 { opacity: .5;mix-blend-mode: multiply;fill: url(#g9) } 
+		.s9 { opacity: .5;mix-blend-mode: multiply;fill: url(#g10) } 
+		.s10 { fill: url(#g11) } 
+	</style> */}
+        <g id="OBJECTS">
+          <g id="&lt;Group&gt;">
+            <g id="&lt;Group&gt;">
+              <path
+                id="&lt;Path&gt;"
+                fill={'url(#g1)'}
+                d="m314.2 324.2h-48.6c-14.6 0.4-25.1-5.1-25.2-15.2q0-3 1-6.5c2.9-10.9 13.6-19 25.6-21.7 0 0-2.1-3.7-2.1-3.7-78.9-13.5-96.1 29.7-102.2 51.8-3.3 11.8-11.7 52.3 37.6 52.8h48.7q25.2 0 25.2 15.1 0 3-1.1 6.5-4.8 18.8-28 21.3c24.3-1.7 99.8-10.8 124.7-56.7 0.1-29.1-16.3-43.6-55.6-43.7z"
+              />
+              <path
+                id="&lt;Path&gt;"
+                opacity={0.5}
+                mixBlendMode="multiply"
+                fill={'url(#g2)'}
+                d="m314.2 324.2h-48.6c-14.6 0.4-25.1-5.1-25.2-15.2q0-3 1-6.5c2.9-10.9 13.6-19 25.6-21.7 0 0-2.1-3.7-2.1-3.7-78.9-13.5-96.1 29.7-102.2 51.8-3.3 11.8-11.7 52.3 37.6 52.8h48.7q25.2 0 25.2 15.1 0 3-1.1 6.5-4.8 18.8-28 21.3c24.3-1.7 99.8-10.8 124.7-56.7 0.1-29.1-16.3-43.6-55.6-43.7z"
+              />
+              <path
+                id="&lt;Path&gt;"
+                fill={'url(#g3)'}
+                d="m510.3 280.8c0 0-73.3-1.3-123.1 56.9l-10.3 38.7q0 0 0 0-1.1 3.5-2.1 7l-17.8 66.5c18.9-0.6 74.3-3.2 108.4-12.3 0 0-96.1 32.7-114.6 35.5l-0.2 0.6c-0.7 2.8 1.4 5.4 4.2 5.4h63.3c23 0 43.1-15.4 49.1-37.6"
+              />
+              <path
+                id="&lt;Path&gt;"
+                opacity={0.5}
+                mixBlendMode="multiply"
+                fill={'url(#g4)'}
+                d="m393 337.7l-10.3 38.7q0.1 0 0.1 0-1.2 3.5-2.1 7l-17.9 66.5c18.9-0.6 74.3-3.2 108.4-12.3 0 0-96.1 32.7-114.6 35.5l-0.1 0.6c-0.8 2.8 1.3 5.4 4.1 5.4h63.4c22.9 0 43-15.4 49-37.6l15.7-58.4c0.5-1.9 2.2-3.2 4.1-3.2h64.6c23 0 43.1-15.5 49-37.7l3-11c0.7-2.8-1.3-5.4-4.2-5.4h-95.6c-2.8 0-4.9-2.7-4.2-5.4l5.9-21.9 0.9-3.3 1.2-4.3q0 0 0 0l2.7-10.1c0 0-73.2-1.3-123.1 56.9z"
+              />
+              <path
+                id="&lt;Path&gt;"
+                fill={'url(#g5)'}
+                d="m299.2 226.7c-45.3 18.3-84 41.2-112.8 65.7 33.3-13.1 85.9-11.6 90.8-11.6h131l-15.2 56.9c49.9-58.2 123.1-56.9 123.1-56.9h94.4c17.7 0 33.3-11.9 37.9-29.1l6.7-25.2z"
+              />
+              <path
+                id="&lt;Path&gt;"
+                opacity={0.5}
+                mixBlendMode="multiply"
+                fill={'url(#g6)'}
+                d="m299.2 226.7c-45.3 18.3-84 41.2-112.8 65.7 33.3-13.1 85.9-11.6 90.8-11.6h131l-15.2 56.9c49.9-58.2 123.1-56.9 123.1-56.9h94.4c17.7 0 33.3-11.9 37.9-29.1l6.7-25.2z"
+              />
+              <path
+                id="&lt;Path&gt;"
+                fill={'url(#g7)'}
+                d="m237.5 425q4 0 7.6-0.4c-4.8 0.4-7.6 0.4-7.6 0.4z"
+              />
+              <path
+                id="&lt;Path&gt;"
+                fill={'url(#g9)'}
+                d="m245.1 424.6q-3.6 0.4-7.6 0.4h-63.1c-29.7 0-56 17.9-67.4 44.6-1.9 4.5 1.4 9.5 6.3 9.5h156c47 0 80.2-23.5 92.9-70.7l3.7-13.9q3.9-14.8 3.9-26.6c-24.9 45.9-100.4 55-124.7 56.7z"
+              />
+              <path
+                id="&lt;Path&gt;"
+                opacity={0.5}
+                mixBlendMode="multiply"
+                fill={'url(#g10)'}
+                d="m245.1 424.6q-3.6 0.4-7.6 0.4h-63.1c-29.7 0-56 17.9-67.4 44.6-1.9 4.5 1.4 9.5 6.3 9.5h156c47 0 80.2-23.5 92.9-70.7l3.7-13.9q3.9-14.8 3.9-26.6c-24.9 45.9-100.4 55-124.7 56.7z"
+              />
+              <path
+                id="&lt;Path&gt;"
+                opacity={0.5}
+                mixBlendMode="multiply"
+                fill={'url(#g4)'}
+                d="m245.1 424.6q-3.6 0.4-7.6 0.4h-63.1c-29.7 0-56 17.9-67.4 44.6-1.9 4.5 1.4 9.5 6.3 9.5h156c47 0 80.2-23.5 92.9-70.7l3.7-13.9q3.9-14.8 3.9-26.6c-24.9 45.9-100.4 55-124.7 56.7z"
+              />
+              <path
+                id="&lt;Path&gt;"
+                fill={'url(#g11)'}
+                d="m656.4 261.5q0-0.1 0-0.2c12.2 66.2-85.4 149.3-224.3 189-143.9 41.1-277.6 20-298.6-47.1-21-67.2 78.6-154.9 222.5-196 19.6-5.6 39-10.1 57.9-13.4-31.6 4.2-64.8 11-98.6 20.5-169 47.8-290.2 146.3-270.7 220.1 19.4 73.7 172.2 94.8 341.1 47.1 169-47.8 290.1-146.3 270.7-220z"
+              />
+            </g>
+          </g>
         </g>
       </svg>
     </Box>

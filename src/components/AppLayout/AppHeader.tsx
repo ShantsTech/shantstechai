@@ -319,7 +319,7 @@ export function AppHeader() {
           <Group spacing="xs" noWrap>
             <Link href="/" passHref>
               <Anchor variant="text" onClick={() => closeBurger()}>
-                <Logo />
+                <Logo size={'sm'} />
               </Anchor>
             </Link>
             {!isMuted && (
