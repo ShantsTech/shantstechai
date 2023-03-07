@@ -6,7 +6,7 @@ import { WebhookEndpoint } from '~/server/utils/endpoint-helpers';
 const handler = WebhookEndpoint(async (req: NextApiRequest, res: NextApiResponse) => {
   const writeDbCheck = await dbWrite.user.update({
     where: { id: -1 },
-    data: { username: 'civitai' },
+    data: { username: 'shantsai' },
     select: { id: true },
   });
   const readDbCheck = await dbRead.user.findUnique({ where: { id: 1 }, select: { id: true } });

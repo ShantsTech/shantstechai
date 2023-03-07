@@ -16,7 +16,7 @@ const importSchema = z.object({
 export default ModEndpoint(
   async function importSource(req: NextApiRequest, res: NextApiResponse) {
     const { source, wait, data } = importSchema.parse(req.query);
-    const userId = -1; //Default civitai user id
+    const userId = -1; //Default shantsai user id
 
     const { id } = await dbWrite.import.create({
       data: {

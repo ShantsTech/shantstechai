@@ -31,7 +31,7 @@ const registry = {
     Component: RunStrategyModal,
     fn: openRunStrategyModal,
   },
-  'civitai-link-wizard': {
+  'shantsai-link-wizard': {
     Component: ShantsTechLinkWizard,
     fn: openShantsTechLinkModal,
   },
@@ -55,7 +55,7 @@ export const CustomModalsProvider = ({ children }: { children: React.ReactNode }
         {
           onboarding: DynamicOnboardingModal,
           questionsInfo: QuestionsInfoModal,
-          'civitai-link-success': ShantsTechLinkSuccessModal,
+          'shantsai-link-success': ShantsTechLinkSuccessModal,
           ...(Object.keys(registry) as Array<keyof typeof registry>).reduce<any>((acc, key) => {
             acc[key] = registry[key].Component;
             return acc;

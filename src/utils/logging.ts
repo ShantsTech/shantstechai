@@ -36,8 +36,8 @@ type ChalkColor =
   | 'whiteBright';
 
 export function createLogger(name: string, color: ChalkColor = 'green') {
-  const shouldLog = env.LOGGING.includes(name);
-  if (!shouldLog) return () => {}; //eslint-disable-line
+  // const shouldLog = env.LOGGING.includes(name);
+  // if (!shouldLog) return () => {}; //eslint-disable-line
 
   return (...args: any[]) => { //eslint-disable-line
     console.log(chalk[color](name), ...args);

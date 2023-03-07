@@ -230,7 +230,7 @@ export default createRoutedContext({
                             size="xs"
                             px="md"
                             component="a"
-                            href={`https://github.com/civitai/sd_civitai_extension`}
+                            href={`https://github.com/shantsai/sd_shantsai_extension`}
                             target="_blank"
                             rel="noreferrer"
                           >

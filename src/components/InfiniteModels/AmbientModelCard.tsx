@@ -30,7 +30,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState, useMemo } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { CivitiaLinkManageButton } from '~/components/ShantsTechLink/CivitiaLinkManageButton';
+import { CivitiaLinkManageButton } from '~/components/ShantsTechLink/ShantsTechLinkManageButton';
 import { ShantsTechTooltip } from '~/components/ShantsTechWrapped/ShantsTechTooltip';
 
 import { EdgeImage } from '~/components/EdgeImage/EdgeImage';

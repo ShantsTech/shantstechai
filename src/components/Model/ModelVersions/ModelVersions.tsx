@@ -45,7 +45,7 @@ import { openRoutedContext } from '~/providers/RoutedContextProvider';
 import { JoinPopover } from '~/components/JoinPopover/JoinPopover';
 import { AnchorNoTravel } from '~/components/AnchorNoTravel/AnchorNoTravel';
 import { useShantsTechLink } from '~/components/ShantsTechLink/ShantsTechLinkProvider';
-import { CivitiaLinkManageButton } from '~/components/ShantsTechLink/CivitiaLinkManageButton';
+import { CivitiaLinkManageButton } from '~/components/ShantsTechLink/ShantsTechLinkManageButton';
 import { IconDownload } from '@tabler/icons';
 
 const VERSION_IMAGES_LIMIT = 8;
@@ -111,8 +111,8 @@ function TabContent({ version, nsfw, type, locked, modelId, modelName }: TabCont
   const mobile = useIsMobile();
   const currentUser = useCurrentUser();
   const hashes = getPrimaryFile(version.files)?.hashes;
-  const { connected: civitaiLinked } = useShantsTechLink();
-  const displayShantsTechLink = civitaiLinked && version.hashes.length > 0;
+  const { connected: shantsaiLinked } = useShantsTechLink();
+  const displayShantsTechLink = shantsaiLinked && version.hashes.length > 0;
 
   const versionDetails: DescriptionTableProps['items'] = [
     {

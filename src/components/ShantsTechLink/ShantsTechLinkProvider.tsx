@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
-import { ShantsTechLinkInstance } from '~/components/ShantsTechLink/civitai-link-api';
+import { ShantsTechLinkInstance } from '~/components/ShantsTechLink/shantstech-link-api';
 import {
   Command,
   ResponseResourcesList,
@@ -19,7 +19,7 @@ import {
   WorkerOutgoingMessage,
   WorkerIncomingMessage,
   Instance,
-} from '~/workers/civitai-link-worker-types';
+} from '~/workers/shantsai-link-worker-types';
 import { MantineColor } from '@mantine/styles';
 import { useFeatureFlags } from '~/providers/FeatureFlagsProvider';
 
@@ -33,7 +33,7 @@ const statuses = [
   'link-ready',
 ] as const;
 
-export const civitaiLinkStatusColors: Record<ShantsTechLinkStatus, MantineColor | undefined> = {
+export const shantsaiLinkStatusColors: Record<ShantsTechLinkStatus, MantineColor | undefined> = {
   'not-connected': 'undefined',
   'no-instances': undefined,
   'no-selected-instance': 'yellow',
@@ -117,14 +117,14 @@ const Provider = ({ children }: { children: React.ReactNode }) => {
   const [error, setError] = useState<string>();
   const setActivities = useShantsTechLinkStore((state) => state.setActivities);
 
-  //TODO.civitai-link - timeout when setting active instance
+  //TODO.shantsai-link - timeout when setting active instance
 
   const getWorker = () => {
     if (workerPromise.current) return workerPromise.current;
     if (workerRef.current) return Promise.resolve(workerRef.current);
     const worker = new SharedWorker(
-      new URL('/src/workers/civitai-link.worker.ts', import.meta.url),
-      { name: 'civitai-link' }
+      new URL('/src/workers/shantsai-link.worker.ts', import.meta.url),
+      { name: 'shantsai-link' }
     );
 
     const handleError = (msg: string) => {
@@ -259,7 +259,7 @@ const Provider = ({ children }: { children: React.ReactNode }) => {
 export function ShantsTechLinkProvider({ children }: { children: React.ReactElement }) {
   const flags = useFeatureFlags();
 
-  return flags.civitaiLink ? (
+  return flags.shantsaiLink ? (
     <Provider>{children}</Provider>
   ) : (
     <ShantsTechLinkCtx.Provider

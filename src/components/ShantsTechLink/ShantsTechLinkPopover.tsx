@@ -38,7 +38,7 @@ import {
 import { useCallback, useState } from 'react';
 import { AlertWithIcon } from '~/components/AlertWithIcon/AlertWithIcon';
 import {
-  civitaiLinkStatusColors,
+  shantsaiLinkStatusColors,
   useShantsTechLink,
   useShantsTechLinkStore,
 } from '~/components/ShantsTechLink/ShantsTechLinkProvider';
@@ -141,7 +141,7 @@ function InstancesManager() {
 
   const handleAddClick = () => {
     deselectInstance();
-    openContext('civitai-link-wizard', {});
+    openContext('shantsai-link-wizard', {});
   };
 
   const showControls = status !== 'no-socket-connection';
@@ -207,7 +207,7 @@ function BigIndicator() {
   const swatch = theme.fn.variant({
     variant: 'filled',
     primaryFallback: false,
-    color: civitaiLinkStatusColors[status],
+    color: shantsaiLinkStatusColors[status],
   });
   return swatch.background ? <ColorSwatch color={swatch.background} size={20} /> : null;
 }
@@ -237,7 +237,7 @@ function GetStarted() {
         <Button
           leftIcon={<IconPlus size={18} />}
           radius={0}
-          onClick={() => openContext('civitai-link-wizard', {})}
+          onClick={() => openContext('shantsai-link-wizard', {})}
         >
           Get Started
         </Button>
@@ -333,8 +333,8 @@ function LinkButton() {
   // only show the connected indicator if there are any instances
   const { status } = useShantsTechLink();
   const features = useFeatureFlags();
-  if (!features.civitaiLink) return null;
-  const color = civitaiLinkStatusColors[status];
+  if (!features.shantsaiLink) return null;
+  const color = shantsaiLinkStatusColors[status];
 
   return (
     <ActionIcon>

@@ -35,7 +35,7 @@ const setUserName = async (email: string) => {
 const useSecureCookies = env.NEXTAUTH_URL.startsWith('https://');
 const cookiePrefix = useSecureCookies ? '__Secure-' : '';
 const { hostname } = new URL(env.NEXTAUTH_URL);
-const cookieName = `${cookiePrefix}civitai-token`;
+const cookieName = `${cookiePrefix}shantsai-token`;
 
 export const createAuthOptions = (req: NextApiRequest): NextAuthOptions => ({
   adapter: PrismaAdapter(dbWrite),

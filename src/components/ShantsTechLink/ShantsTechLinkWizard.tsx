@@ -31,7 +31,7 @@ import { createContextModal } from '~/components/Modals/utils/createContextModal
 import { PlanBenefitList } from '~/components/Stripe/PlanBenefitList';
 
 const { openModal, Modal } = createContextModal({
-  name: 'civitai-link-wizard',
+  name: 'shantsai-link-wizard',
   title: 'ShantsTech Link Setup',
   size: 800,
   // withCloseButton: false,
@@ -51,7 +51,7 @@ const { openModal, Modal } = createContextModal({
     useEffect(() => {
       if (connected) {
         openContextModal({
-          modal: 'civitai-link-success',
+          modal: 'shantsai-link-success',
           withCloseButton: false,
           closeOnClickOutside: false,
           closeOnEscape: false,
@@ -157,7 +157,7 @@ const { openModal, Modal } = createContextModal({
                     <Text
                       component="a"
                       variant="link"
-                      href="https://youtube.com/civitai"
+                      href="https://youtube.com/shantsai"
                       target="_blank"
                     >
                       our video guide
@@ -192,7 +192,7 @@ const { openModal, Modal } = createContextModal({
                         URL
                       </Text>{' '}
                       field:{' '}
-                      <CopyButton value="https://github.com/civitai/sd_civitai_extension">
+                      <CopyButton value="https://github.com/shantsai/sd_shantsai_extension">
                         {({ copied, copy }) => (
                           <Code
                             py={4}
@@ -202,7 +202,7 @@ const { openModal, Modal } = createContextModal({
                             color={copied ? 'teal' : undefined}
                           >
                             <Group>
-                              https://github.com/civitai/sd_civitai_extension
+                              https://github.com/shantsai/sd_shantsai_extension
                               {copied ? <IconCheck size={14} /> : <IconCopy size={14} />}
                             </Group>
                           </Code>

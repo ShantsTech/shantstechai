@@ -54,7 +54,7 @@ const images = [...Array(50)].map((x, i) => {
   const index = i + 1 < 10 ? `0${i + 1}` : i + 1;
   return {
     name: `demo-image-${index}`,
-    url: `https://s3.us-west-1.wasabisys.com/civitai-prod/images/demo-image-${index}.png`,
+    url: `https://s3.us-west-1.wasabisys.com/shantsai-prod/images/demo-image-${index}.png`,
     height: 512,
     width: 512,
   };

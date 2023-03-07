@@ -11,7 +11,7 @@ export type ShantsTechLinkInstance = {
 
 const clFetch = async (url: string, options: RequestInit = {}) => {
   if (!url.startsWith('/')) url = '/' + url;
-  const response = await fetch(env.NEXT_PUBLIC_CIVITAI_LINK + url, {
+  const response = await fetch(env.NEXT_PUBLIC_SHANTS_TECH_LINK + url, {
     ...options,
     credentials: 'include',
   });

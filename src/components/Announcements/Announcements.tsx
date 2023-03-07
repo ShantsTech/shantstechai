@@ -45,7 +45,7 @@ const WelcomeAnnouncement = (props: AnnouncementsProps) => (
     id={0}
     emoji="👋"
     title="Welcome to ShantsTech!"
-    content="Browse, share, and review custom AI art models, [learn more...](/content/guides/what-is-civitai)"
+    content="Browse, share, and review custom AI art models, [learn more...](/content/guides/what-is-shantsai)"
     {...props}
   />
 );
