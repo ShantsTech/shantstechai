@@ -95,11 +95,11 @@ export const createAuthOptions = (req: NextApiRequest): NextAuthOptions => ({
       clientSecret: env.GITHUB_CLIENT_SECRET,
       allowDangerousEmailAccountLinking: true,
     }),
-    // GoogleProvider({
-    //   clientId: env.GOOGLE_CLIENT_ID,
-    //   clientSecret: env.GOOGLE_CLIENT_SECRET,
-    //   allowDangerousEmailAccountLinking: true,
-    // }),
+    GoogleProvider({
+      clientId: env.GOOGLE_CLIENT_ID,
+      clientSecret: env.GOOGLE_CLIENT_SECRET,
+      allowDangerousEmailAccountLinking: true,
+    }),
     // RedditProvider({
     //   clientId: env.REDDIT_CLIENT_ID,
     //   clientSecret: env.REDDIT_CLIENT_SECRET,

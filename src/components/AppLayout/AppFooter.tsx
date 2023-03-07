@@ -113,22 +113,6 @@ export function AppFooter() {
           </Button>
           <Button
             component="a"
-            href="https://discord.gg/UwX5wKwm6c"
-            {...buttonProps}
-            target="_blank"
-          >
-            Discord
-          </Button>
-          <Button
-            component="a"
-            href="https://twitter.com/HelloShantsTech"
-            {...buttonProps}
-            target="_blank"
-          >
-            Twitter
-          </Button>
-          <Button
-            component="a"
             href="https://github.com/ShantsTech/shantstechai/wiki/REST-API-Reference"
             {...buttonProps}
             target="_blank"
