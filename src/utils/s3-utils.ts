@@ -21,9 +21,9 @@ const missingEnvs = (): string[] => {
   if (!env.S3_UPLOAD_SECRET) {
     keys.push('S3_UPLOAD_SECRET');
   }
-  if (!env.S3_UPLOAD_ENDPOINT) {
-    keys.push('S3_UPLOAD_ENDPOINT');
-  }
+  // if (!env.S3_UPLOAD_ENDPOINT) {
+  //   keys.push('S3_UPLOAD_ENDPOINT');
+  // }
   if (!env.S3_UPLOAD_BUCKET) {
     keys.push('S3_UPLOAD_BUCKET');
   }
