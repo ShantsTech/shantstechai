@@ -33,15 +33,15 @@ export const serverSchema = z.object({
   // EMAIL_USER: z.string(),
   // EMAIL_PASS: z.string(),
   // EMAIL_FROM: z.string(),
-  // S3_UPLOAD_KEY: z.string(),
+  S3_UPLOAD_KEY: z.string(),
   // S3_ORIGINS: z.preprocess((value) => {
   //   const str = String(value);
   //   return str.split(',');
   // }, z.array(z.string().url()).optional()),
-  // S3_UPLOAD_SECRET: z.string(),
-  // S3_UPLOAD_REGION: z.string(),
+  S3_UPLOAD_SECRET: z.string(),
+  S3_UPLOAD_REGION: z.string(),
   // S3_UPLOAD_ENDPOINT: z.string().url(),
-  // S3_UPLOAD_BUCKET: z.string(),
+  S3_UPLOAD_BUCKET: z.string(),
   // S3_SETTLED_BUCKET: z.string(),
   // CF_ACCOUNT_ID: z.string(),
   // CF_IMAGES_TOKEN: z.string(),
