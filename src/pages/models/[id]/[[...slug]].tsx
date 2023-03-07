@@ -97,7 +97,7 @@ import { ModelById } from '~/types/router';
 import { JoinPopover } from '~/components/JoinPopover/JoinPopover';
 import { AnchorNoTravel } from '~/components/AnchorNoTravel/AnchorNoTravel';
 import { useShantsTechLink } from '~/components/ShantsTechLink/ShantsTechLinkProvider';
-import { CivitiaLinkManageButton } from '~/components/ShantsTechLink/CivitiaLinkManageButton';
+import { CivitiaLinkManageButton } from '~/components/ShantsTechLink/ShantsTechLinkManageButton';
 import truncate from 'lodash/truncate';
 
 //TODO - Break model query into multiple queries
@@ -211,7 +211,7 @@ export default function ModelDetail({
   const { classes, theme } = useStyles();
   const queryUtils = trpc.useContext();
   const filters = useInfiniteModelsFilters();
-  const { connected: civitaiLinked } = useShantsTechLink();
+  const { connected: shantsaiLinked } = useShantsTechLink();
 
   const discussionSectionRef = useRef<HTMLDivElement | null>(null);
 
@@ -490,7 +490,7 @@ export default function ModelDetail({
       } (${formatKBytes(file.sizeKB)})`}
     </Menu.Item>
   ));
-  const displayShantsTechLink = civitaiLinked && latestVersion?.hashes.length > 0;
+  const displayShantsTechLink = shantsaiLinked && latestVersion?.hashes.length > 0;
 
   return (
     <>

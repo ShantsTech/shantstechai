@@ -250,7 +250,7 @@ export const getCreatorsHandler = async ({ input }: { input: Partial<GetAllSchem
       take,
       skip,
       count: true,
-      excludeIds: [-1], // Exclude civitai user
+      excludeIds: [-1], // Exclude shantsai user
       select: {
         username: true,
         models: { select: { id: true }, where: { status: 'Published' } },
@@ -432,7 +432,7 @@ export const getLeaderboardHandler = async ({ input }: { input: GetAllSchema }) 
       query,
       take,
       skip,
-      excludeIds: [-1], // Exclude civitai user
+      excludeIds: [-1], // Exclude shantsai user
       select: {
         id: true,
         image: true,

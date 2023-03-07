@@ -77,7 +77,7 @@ export default async function runModel(req: NextApiRequest, res: NextApiResponse
 
   // Append our QS
   const runUrl = new URL(runStrategy.url);
-  runUrl.searchParams.append('utm_source', 'civitai');
+  runUrl.searchParams.append('utm_source', 'shantsai');
 
   res.redirect(runUrl.href);
 }

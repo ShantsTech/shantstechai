@@ -16,12 +16,12 @@ import {
   deleteLinkInstance,
   getLinkInstances,
   updateLinkInstance,
-} from '~/components/ShantsTechLink/civitai-link-api';
+} from '~/components/ShantsTechLink/shantstech-link-api';
 import {
   WorkerIncomingMessage,
   Instance,
   WorkerOutgoingMessage,
-} from '~/workers/civitai-link-worker-types';
+} from '~/workers/shantsai-link-worker-types';
 import { get, set, del } from 'idb-keyval';
 
 // --------------------------------
@@ -36,7 +36,7 @@ const _self: SharedWorkerGlobalScope = self as any;
 // Setup Socket
 // --------------------------------
 
-const socket: SocketClient = io(env.NEXT_PUBLIC_CIVITAI_LINK, {
+const socket: SocketClient = io(env.NEXT_PUBLIC_SHANTS_TECH_LINK, {
   path: '/api/socketio',
   autoConnect: false,
 });

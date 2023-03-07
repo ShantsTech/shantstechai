@@ -10,14 +10,10 @@ declare global {
   var globalDbWrite: PrismaClient | undefined;
 }
 
-const singleClient = env.DATABASE_REPLICA_URL === env.DATABASE_URL;
+const singleClient = env.DATABASE_URL;
 const createPrismaClient = ({ readonly }: { readonly: boolean }) => {
-  const log: Prisma.LogLevel[] = isProd
-    ? ['error']
-    : env.LOGGING.filter((x) => x.startsWith('prisma:')).map(
-        (x) => x.replace('prisma:', '') as Prisma.LogLevel
-      );
-  const dbUrl = readonly ? env.DATABASE_REPLICA_URL : env.DATABASE_URL;
+  const log: Prisma.LogLevel[] = ['error'];
+  const dbUrl = env.DATABASE_URL;
   const prisma = new PrismaClient({ log, datasources: { db: { url: dbUrl } } });
   return prisma;
 };

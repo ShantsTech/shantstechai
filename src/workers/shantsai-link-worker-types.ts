@@ -1,4 +1,4 @@
-import { ShantsTechLinkInstance } from '~/components/ShantsTechLink/civitai-link-api';
+import { ShantsTechLinkInstance } from '~/components/ShantsTechLink/shantstech-link-api';
 import {
   ActivitiesResponse,
   Command,

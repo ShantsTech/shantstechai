@@ -1,7 +1,7 @@
 import { createNotificationProcessor } from '~/server/notifications/base.notifications';
 
 export const systemNotifications = createNotificationProcessor({
-  'civitai-features': {
+  'shantsai-features': {
     displayName: 'New ShantsTech features',
     prepareMessage: ({ details }) => ({
       message: `New Features! ${details.featureBlurb}, check it out!`,

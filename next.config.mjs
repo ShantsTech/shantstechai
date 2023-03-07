@@ -26,8 +26,8 @@ export default defineNextConfig({
     domains: [
       's3.us-west-1.wasabisys.com',
       'model-ai.s3.us-west-1.wasabisys.com',
-      'civitai-prod.s3.us-west-1.wasabisys.com',
-      'civitai-dev.s3.us-west-1.wasabisys.com',
+      'shantsai-prod.s3.us-west-1.wasabisys.com',
+      'shantsai-dev.s3.us-west-1.wasabisys.com',
     ],
   },
   experimental: {
